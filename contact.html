@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tushar Tripathi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="container1">
+    <!-- Hamburger Menu Button -->
+    <button class="menu-btn" onclick="toggleSidebar()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+    
+    <div class="sidebar" id="sidebar">
+
+      <nav>
+        <ul>
+          <li><a href="index.html" ><span class="material-symbols-outlined">home</span> Home</a></li>
+          <li><a href="intro.html" ><span class="material-symbols-outlined">person</span> My Intro</a>
+          </li>
+          <li><a href="services.html"><span class="material-symbols-outlined">concierge</span> Services</a></li>
+          <li><a href="https://programtechlang.blogspot.com/" target="_blank"><span
+                class="material-symbols-outlined">edit_note</span> Blog</a></li>
+          <li><a href="contact.html" class="active"><span class="material-symbols-outlined">contact_support</span> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="toggleSidebar()"></div>
+    <div class="main">
+      <div class="contactform">
+        <h1>Contact me for work or general enquiry</h1>
+        <form method="POST" name="contact-form">
+          <div class="mb-3">
+            <label for="clientname" class="form-label">Name</label>
+            <input type="name" class="form-control" id="clientname" name="Name">
+          </div>
+          <div class="mb-3">
+            <label for="clientemail" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp" name="Email">
+            <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="phone" class="form-control" id="phone" name="Phone">
+          </div>
+          <div class="mb-3">
+            <label for="enquiry" class="form-label">Enquiry</label>
+            <input type="text" class="form-control" id="enquiry" name="Enquiry">
+          </div>
+          <div class="mb-3" id="form-check">
+            <input type="checkbox" class="form-check-input" id="isclient" name="Yes">
+            <label class="form-check-label" for="isclient">Reach out for a Project.</label>
+          </div>
+          <button type="submit" class="btn btn-sm">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

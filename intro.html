@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tushar Tripathi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="container1">
+    <!-- Hamburger Menu Button -->
+    <button class="menu-btn" onclick="toggleSidebar()">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+
+    
+    <div class="sidebar" id="sidebar">
+
+      <nav>
+        <ul>
+          <li><a href="index.html"><span class="material-symbols-outlined">home</span> Home</a></li>
+          <li><a href="intro.html" class="active"><span class="material-symbols-outlined">person</span> My Intro</a>
+          </li>
+          <li><a href="services.html"><span class="material-symbols-outlined">concierge</span> Services</a></li>
+          <li><a href="https://programtechlang.blogspot.com/" target="_blank"><span
+                class="material-symbols-outlined">edit_note</span> Blog</a></li>
+          <li><a href="contact.html"><span class="material-symbols-outlined">contact_support</span> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Overlay -->
+    <div id="overlay" onclick="toggleSidebar()"></div>
+    <div class="main">
+      <div class="intro">
+        <h2>About Me</h2>
+        <p>
+          "I'm a passionate and versatile creative professional with a deep
+          love for design and innovation. I hold a diploma in Computer Science
+          Engineering and have honed my skills as a Software Development
+          Intern at Syntheim. My work reflects a blend of creativity and
+          technical expertise, spanning graphic design, web development, and
+          digital marketing. I thrive on solving complex challenges and
+          bringing unique ideas to life. Explore my portfolio to see my
+          commitment to crafting compelling digital experiences."
+        </p>
+        <h2>My Skills</h2>
+        <div class="skillcontainer">
+          <table>
+            <tr>
+              <th>Language</th>
+              <th>Rating</th>
+            </tr>
+            <tr>
+              <td>Web Development</td>
+              <td>
+                <div class="skill hundred"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Java Development</td>
+              <td>
+                <div class="skill fifty"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Google Appscript</td>
+              <td>
+                <div class="skill hundred"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Backend Development using PHP</td>
+              <td>
+                <div class="skill hundred"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Database MySQL</td>
+              <td>
+                <div class="skill t5"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>
+                <div class="skill hundred"></div>
+              </td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>
+                <div class="skill fifty"></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h2>My Projects</h2>
+        <div class="project">
+          <h3>Box Office Data Prediction</h3>
+          <p>
+            During my IBM Externship, I undertook a project focused on
+            predicting box office data using Python libraries such as pandas,
+            matplotlib, and scikit-learn. With my intermediate level web
+            development and software development skills, I built a predictive
+            model that leveraged data science and machine learning techniques.
+            Alongside my knowledge of data structures and algorithms, I
+            utilized Python programming to analyze and process the box office
+            dataset. This project allowed me to enhance my understanding of
+            data science concepts and apply them to real-world scenarios,
+            demonstrating my proficiency in Python, data manipulation with
+            pandas, data visualization with matplotlib, and machine learning
+            with scikit-learn.
+          </p>
+        </div>
+        <div class="project">
+          <h3>Study Center Management</h3>
+          <p>
+            For my college project, I developed a study center management
+            website using HTML, CSS, JavaScript, PHP, and MySQL. This
+            comprehensive website aimed to streamline the management of a
+            study center by providing features such as student enrollment,
+            course management, attendance tracking, and exam scheduling.
+            Through HTML and CSS, I created an intuitive and visually
+            appealing user interface. JavaScript was used to add interactivity
+            and enhance user experience. PHP and MySQL were employed for
+            server-side scripting and database management, respectively. This
+            project showcased my proficiency in front-end and back-end web
+            development, database integration, and problem-solving skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
