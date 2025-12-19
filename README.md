@@ -21,9 +21,8 @@ Here are some of the featured projects in this portfolio:
 
 | Project | Description | Link |
 |---|---|---|
-| **Custovista** | An AI-powered tool using multi-modal agentic AI and visualizations to provide customer insights and sentiment trends. | [Hugging Face Space](https://huggingface.co/spaces/cselester/Custovista) |
-| **FraudGuard** | A lightweight fraud-detection system developed during HackHound 3.0 to help small businesses detect suspicious transactions in real time. | [GitHub Repo](https://github.com/cselester/fraudguard) |
-| *Add more here* | *…* | *…* |
+| Custovista | An AI-powered tool using multi-modal agentic AI and visualizations to provide customer insights and sentiment trends. | [Hugging Face Space](https://huggingface.co/spaces/cselester/Custovista) |
+| FraudGuard| A lightweight fraud-detection system developed during HackHound 3.0 to help small businesses detect suspicious transactions in real time. | [GitHub Repo](https://github.com/cselester/fraudguard) |
 
 ---
 
