@@ -4,55 +4,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tushar Tripathi</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description"
+    content="Tushar Tripathi is a software developer focused on backend systems, automation workflows, and secure web applications." />
+  <title>Tushar Tripathi | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div class="container1">
-    <!-- Hamburger Menu Button -->
-    <button class="menu-btn" onclick="toggleSidebar()">
+    <button class="menu-btn" onclick="toggleSidebar()" aria-label="Toggle navigation" aria-controls="sidebar"
+      aria-expanded="false">
       <span class="material-symbols-outlined">menu</span>
     </button>
 
-    
-    <div class="sidebar" id="sidebar">
-
-      <nav>
+    <aside class="sidebar" id="sidebar">
+      <nav aria-label="Primary">
         <ul>
           <li><a href="index.html" class="active"><span class="material-symbols-outlined">home</span> Home</a></li>
-          <li><a href="intro.html" ><span class="material-symbols-outlined">person</span> My Intro</a>
-          </li>
+          <li><a href="intro.html"><span class="material-symbols-outlined">person</span> My Intro</a></li>
           <li><a href="services.html"><span class="material-symbols-outlined">concierge</span> Services</a></li>
-          <li><a href="https://programtechlang.blogspot.com/" target="_blank"><span
+          <li><a href="https://programtechlang.blogspot.com/" target="_blank" rel="noopener noreferrer"><span
                 class="material-symbols-outlined">edit_note</span> Blog</a></li>
           <li><a href="contact.html"><span class="material-symbols-outlined">contact_support</span> Contact</a></li>
         </ul>
       </nav>
-    </div>
+    </aside>
 
-    <!-- Overlay -->
     <div id="overlay" onclick="toggleSidebar()"></div>
 
+    <main class="main">
+      <section class="hero">
+        <div class="hero-copy devInfo">
+          <p class="eyebrow">Backend, automation, and secure application development</p>
+          <h1 class="hero-title">Tushar Tripathi</h1>
+          <p class="about">Computer Science undergraduate specializing in Cyber Security & Digital Forensics, building
+            backend systems, automation workflows, and secure web applications.</p>
+          <p class="moreabout">My recent work includes CRM API integrations, automated email systems, database design,
+            and maintainable backend solutions using Python, Java, PHP, MySQL, MongoDB, and REST APIs.</p>
 
-    <div class="main">
-      <div class="infocontainer">
-        <div class="devInfo">
-          <div class="hello">Hi I am</div>
-          <div class="name">Tushar Tripathi</div>
-          <div class="about">Web & Software Developer</div>
-          <div class="moreabout"> Committed to continuous learning and eager to contribute to innovative projects.
+          <div class="buttons button-group">
+            <a href="cv.pdf" target="_blank" class="btn" rel="noopener noreferrer">Download CV</a>
+            <a href="contact.html" class="btn btn-secondary">Let's Work Together</a>
           </div>
-          <div class="buttons">
-            <a href="cv.pdf" target="_blank"><button class="btn">Download CV</button></a>
-            <a href="contact.html"><button class="btn">Contact Me</button></a>
+
+          <div class="social-links">
+            <a href="https://github.com/cselester" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/cselester/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://programtechlang.blogspot.com/" target="_blank" rel="noopener noreferrer">Blog</a>
+          </div>
+
+          <div class="hero-highlights">
+            <article class="highlight">
+              <span>Focus</span>
+              <strong>Backend development, automation, and secure design</strong>
+            </article>
+            <article class="highlight">
+              <span>Strengths</span>
+              <strong>Python, Java, PHP, MySQL, MongoDB, REST APIs</strong>
+            </article>
+            <article class="highlight">
+              <span>Experience</span>
+              <strong>Zoho CRM integration, automation systems, and scalable architecture</strong>
+            </article>
           </div>
         </div>
-        <div class="devPic"><img src="devpic.jpg" alt="Tushar"></div>
-      </div>
-    </div>
+
+        <div class="devPic hero-visual">
+          <img src="devpic.jpg" alt="Portrait of Tushar Tripathi" />
+        </div>
+      </section>
+    </main>
   </div>
   <script src="scripts.js"></script>
 </body>

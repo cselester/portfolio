@@ -4,80 +4,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tushar Tripathi</title>
-  
+  <meta name="description"
+    content="Services offered by Tushar Tripathi across backend development, automation workflows, and secure web solutions." />
+  <title>Tushar Tripathi | Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div class="container1">
-    <!-- Hamburger Menu Button -->
-    <button class="menu-btn" onclick="toggleSidebar()">
+    <button class="menu-btn" onclick="toggleSidebar()" aria-label="Toggle navigation" aria-controls="sidebar"
+      aria-expanded="false">
       <span class="material-symbols-outlined">menu</span>
     </button>
 
-    
-    <div class="sidebar" id="sidebar">
-
-      <nav>
+    <aside class="sidebar" id="sidebar">
+      <nav aria-label="Primary">
         <ul>
           <li><a href="index.html"><span class="material-symbols-outlined">home</span> Home</a></li>
-          <li><a href="intro.html" ><span class="material-symbols-outlined">person</span> My Intro</a>
-          </li>
-          <li><a href="services.html" class="active"><span class="material-symbols-outlined">concierge</span> Services</a></li>
-          <li><a href="https://programtechlang.blogspot.com/" target="_blank"><span
+          <li><a href="intro.html"><span class="material-symbols-outlined">person</span> My Intro</a></li>
+          <li><a href="services.html" class="active"><span class="material-symbols-outlined">concierge</span>
+              Services</a></li>
+          <li><a href="https://programtechlang.blogspot.com/" target="_blank" rel="noopener noreferrer"><span
                 class="material-symbols-outlined">edit_note</span> Blog</a></li>
           <li><a href="contact.html"><span class="material-symbols-outlined">contact_support</span> Contact</a></li>
         </ul>
       </nav>
-    </div>
+    </aside>
 
-    <!-- Overlay -->
     <div id="overlay" onclick="toggleSidebar()"></div>
 
-  
-    <div class="main">
-      <div class="cards">
+    <main class="main">
+      <section class="section-shell">
+        <p class="eyebrow">Services</p>
+        <h1 class="section-title">Focused support for backend systems, automation workflows, and secure web solutions.</h1>
+        <p class="section-lead">My strongest work sits around practical engineering problems: integrating APIs,
+          reducing manual effort, structuring reliable databases, and building applications with maintainable backend
+          logic.</p>
 
-        <div class="card" style="width: 18rem;height: 350px">
-          <img class="card-img-top" src="dev.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Web Development</h5>
-            <p class="card-text">Web design and development is an umbrella term that describes the process of creating a
-              website.
-          </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <img src="dev.jpg" alt="Laptop setup representing web development" />
+            <div class="service-body">
+              <h2>Web Development</h2>
+              <p>I build responsive web interfaces backed by clean structure and practical implementation, especially
+                for business sites, internal dashboards, and utility-driven products.</p>
+              <ul class="service-list">
+                <li>Frontend pages with maintainable HTML, CSS, and JavaScript</li>
+                <li>Business websites and admin-oriented interfaces</li>
+                <li>Usability, structure, and content cleanup</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="dev2.jpg" alt="Developer workstation representing software development" />
+            <div class="service-body">
+              <h2>Backend & Automation</h2>
+              <p>I build workflows that remove repetitive effort, connect systems together, and make operations faster
+                and easier to manage.</p>
+              <ul class="service-list">
+                <li>Automation systems with Python or PHP</li>
+                <li>REST API and CRM integrations</li>
+                <li>Database schema planning and internal tools</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="dev3.jpeg" alt="Search analytics representing SEO optimization" />
+            <div class="service-body">
+              <h2>Secure Application Design</h2>
+              <p>I bring a Cyber Security & Digital Forensics mindset to application design, with attention to system
+                integrity, backend structure, and safer implementation choices.</p>
+              <ul class="service-list">
+                <li>Secure-minded backend planning</li>
+                <li>Validation-focused application logic</li>
+                <li>Core CS fundamentals applied to scalable architecture</li>
+              </ul>
+            </div>
+          </article>
         </div>
 
-        <div class="card" style="width: 18rem;height: 350px">
-          <img class="card-img-top" src="dev2.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Software Development</h5>
-            <p class="card-text">""The function of good software is to make the complex appear to be simple." - Grady
-              Booch"</p>
-          </div>
+        <div class="callout">
+          <p>If you need help with a backend-heavy build, workflow automation, or a security-aware web solution, I can
+            help shape the scope and turn it into a clean first version.</p>
+          <a href="contact.html" class="btn">Start a Conversation</a>
         </div>
-
-        <div class="card" style="width: 18rem; height: 350px;">
-          <img class="card-img-top" src="dev3.jpeg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">SEO optimization</h5>
-            <p class="card-text">SEO boosts visibility through keywords, content, and user experience for website
-              performance.</p>
-          </div>
-        </div>
-
-
-
-
-      </div>
-    </div>
-
-  </div>
-  </div>
+      </section>
+    </main>
   </div>
   <script src="scripts.js"></script>
 </body>

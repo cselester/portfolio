@@ -4,205 +4,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tushar Tripathi</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description"
+    content="Learn more about Tushar Tripathi, his backend, automation, security-focused skills, and selected software projects." />
+  <title>Tushar Tripathi | Intro & Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <div class="container1">
-    <!-- Hamburger Menu Button -->
-    <button class="menu-btn" onclick="toggleSidebar()">
+    <button class="menu-btn" onclick="toggleSidebar()" aria-label="Toggle navigation" aria-controls="sidebar"
+      aria-expanded="false">
       <span class="material-symbols-outlined">menu</span>
     </button>
 
-
-    <div class="sidebar" id="sidebar">
-
-      <nav>
+    <aside class="sidebar" id="sidebar">
+      <nav aria-label="Primary">
         <ul>
           <li><a href="index.html"><span class="material-symbols-outlined">home</span> Home</a></li>
           <li><a href="intro.html" class="active"><span class="material-symbols-outlined">person</span> My Intro</a>
           </li>
           <li><a href="services.html"><span class="material-symbols-outlined">concierge</span> Services</a></li>
-          <li><a href="https://programtechlang.blogspot.com/" target="_blank"><span
+          <li><a href="https://programtechlang.blogspot.com/" target="_blank" rel="noopener noreferrer"><span
                 class="material-symbols-outlined">edit_note</span> Blog</a></li>
           <li><a href="contact.html"><span class="material-symbols-outlined">contact_support</span> Contact</a></li>
         </ul>
       </nav>
-    </div>
+    </aside>
 
-    <!-- Overlay -->
     <div id="overlay" onclick="toggleSidebar()"></div>
 
-    <!-- Overlay -->
-    <div id="overlay" onclick="toggleSidebar()"></div>
-    <div class="main">
-      <div class="intro">
-        <h2>About Me</h2>
-        <p>
-          "I'm a passionate and versatile creative professional with a deep
-          love for design and innovation. I hold a diploma in Computer Science
-          Engineering and have honed my skills as a Software Development
-          Intern at Syntheim. My work reflects a blend of creativity and
-          technical expertise, spanning graphic design, web development, and
-          digital marketing. I thrive on solving complex challenges and
-          bringing unique ideas to life. Explore my portfolio to see my
-          commitment to crafting compelling digital experiences."
-        </p>
-        <h2>My Skills</h2>
-        <div class="skillcontainer">
-          <table>
-            <tr>
-              <th>Language</th>
-              <th>Rating</th>
-            </tr>
-            <tr>
-              <td>Web Development</td>
-              <td>
-                <div class="skill hundred"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>Java Development</td>
-              <td>
-                <div class="skill fifty"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>Google Appscript</td>
-              <td>
-                <div class="skill hundred"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>Backend Development using PHP</td>
-              <td>
-                <div class="skill hundred"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>Databases MySQL,SQLite</td>
-              <td>
-                <div class="skill t5"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>C</td>
-              <td>
-                <div class="skill hundred"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>
-                <div class="skill fifty"></div>
-              </td>
-            </tr>
-            <tr>
-              <td>Retrieval-Augmented Generator</td>
-              <td>
-                <div class="skill t5"></div>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <h2>My Projects</h2>
-        <div class="project">
-          <h3>Custovista : AI-Powered Customer Insights<a
-              href="https://huggingface.co/spaces/cselester/Custovista/tree/main"><span
-                class="material-symbols-outlined">arrow_outward</span></a></h3>
-          <p>
-            Custovista is an interactive AI-powered application built on Hugging Face Spaces that enables businesses to
-            gain
-            real-time customer insights from their data. The project leverages multi-modal agentic AI and
-            visualization techniques to analyze customer interactions, detect sentiment, and highlight emerging trends.
+    <main class="main">
+      <section class="section-shell intro">
+        <p class="eyebrow">About</p>
+        <h1 class="section-title">Secure software, strong backend foundations, and automation that saves real time.</h1>
+        <p class="section-lead">I am a Computer Science undergraduate specializing in Cyber Security & Digital
+          Forensics, with hands-on experience in backend development, automation systems, and secure application
+          design.</p>
+        <p class="section-copy">My approach is grounded in core CS fundamentals such as Data Structures & Algorithms,
+          OOP, DBMS, and Operating Systems, while staying practical about outcomes: fewer manual steps, cleaner system
+          design, and software that scales well.</p>
 
-            The goal behind Custovista was to create a lightweight yet powerful tool for organizations that want to
-            understand customer behavior without investing in complex enterprise solutions. With its simple interface
-            and intuitive visualizations, Custovista makes it easier for teams to track satisfaction levels, identify
-            pain points, and make data-driven decisions.
+        <section class="content-block">
+          <h2>Core Skills</h2>
+          <div class="skill-grid">
+            <article class="skill-card">
+              <h3>Languages</h3>
+              <div class="tag-list">
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">C</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Web & Backend</h3>
+              <div class="tag-list">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">JDBC</span>
+                <span class="tag">Servlets</span>
+                <span class="tag">JSP</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Databases & APIs</h3>
+              <div class="tag-list">
+                <span class="tag">MySQL</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">Zoho CRM APIs</span>
+                <span class="tag">Schema Design</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Core CS & Security</h3>
+              <div class="tag-list">
+                <span class="tag">DSA</span>
+                <span class="tag">OOP</span>
+                <span class="tag">DBMS</span>
+                <span class="tag">OS</span>
+                <span class="tag">Secure Design</span>
+                <span class="tag">Cyber Security</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <h3>Tools</h3>
+              <div class="tag-list">
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Jenkins</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">System Maintenance</span>
+              </div>
+            </article>
+          </div>
+        </section>
 
-            By combining accessibility, explainability, and scalability, the project demonstrates how multi-modal AI
-            can be democratized for customer analytics, empowering businesses of all sizes to act on customer feedback
-            effectively.
-          </p>
-        </div>
-        <div class="project">
-          <h3>FraudGuard : Fraud Stops Here <a href="https://github.com/cselester/fraudguard"><span
-                class="material-symbols-outlined">arrow_outward</span></a></h3>
-          <p>
-            During HackHound 3.0, a 24-hour offline hackathon held at SRM-NCR Campus, I developed a lightweight fraud
-            detection system aimed at addressing the growing issue of digital fraud. The motivation stemmed from the
-            observation that most existing fraud detection systems are either too complex or financially inaccessible,
-            especially for small businesses and startups.
+        <section class="content-block">
+          <h2>Featured Projects</h2>
+          <div class="project-grid">
+            <article class="project">
+              <div class="project-heading">
+                <h3>Cryptoshare</h3>
+              </div>
+              <p class="project-meta">Python, BeautifulSoup, Requests, pandas</p>
+              <p>Built a Python-based stock data pipeline that processed 100+ data points per session, combining
+                modular scraping with trend analysis for cleaner financial data workflows.</p>
+            </article>
 
-            While larger organizations may have the resources to deploy advanced AI-based security solutions, smaller
-            players often lack the infrastructure or technical expertise to do the same. Our solution was designed to be
-            simple, fast, and easy to integrate, offering real-time detection of suspicious transactions without the
-            overhead of large-scale systems.
+            <article class="project">
+              <div class="project-heading">
+                <h3>Blockchain-Based Supply Chain Management</h3>
+              </div>
+              <p class="project-meta">Java, JDBC, Servlets, JSP, MySQL</p>
+              <p>Developed a blockchain-inspired tracking system with hashing-based validation and a Java backend,
+                focusing on traceability, integrity, and structured data flow across the supply chain lifecycle.</p>
+            </article>
 
-            By focusing on accessibility, cost-effectiveness, and ease of use, our product empowers small enterprises to
-            take the first step toward securing their digital operations with AI-driven insights.
-          </p>
-        </div>
-        <div class="project">
-          <h3>FraudGuard : Fraud Stops Here <a href="https://github.com/cselester/fraudguard"><span
-                class="material-symbols-outlined">arrow_outward</span></a></h3>
-          <p>
-            During HackHound 3.0, a 24-hour offline hackathon held at SRM-NCR Campus, I developed a lightweight fraud
-            detection system aimed at addressing the growing issue of digital fraud. The motivation stemmed from the
-            observation that most existing fraud detection systems are either too complex or financially inaccessible,
-            especially for small businesses and startups.
+            <article class="project">
+              <div class="project-heading">
+                <h3>FraudGuard</h3>
+                <a href="https://github.com/cselester/fraudguard" target="_blank" rel="noopener noreferrer"><span
+                    class="material-symbols-outlined">arrow_outward</span></a>
+              </div>
+              <p class="project-meta">Python, data processing, fraud detection logic</p>
+              <p>Engineered a rule-based transaction validation system designed to reduce false approvals by roughly
+                25%, with an extensible architecture for evolving fraud checks over time.</p>
+            </article>
 
-            While larger organizations may have the resources to deploy advanced AI-based security solutions, smaller
-            players often lack the infrastructure or technical expertise to do the same. Our solution was designed to be
-            simple, fast, and easy to integrate, offering real-time detection of suspicious transactions without the
-            overhead of large-scale systems.
+            <article class="project">
+              <div class="project-heading">
+                <h3>Automation at Pro India</h3>
+              </div>
+              <p class="project-meta">Automation, CRM APIs, database design</p>
+              <p>Built an automated email workflow that reduced manual effort by around 40%, integrated Zoho CRM APIs
+                to improve processing speed by around 30%, and contributed database schemas plus SRS documentation.</p>
+            </article>
 
-            By focusing on accessibility, cost-effectiveness, and ease of use, our product empowers small enterprises to
-            take the first step toward securing their digital operations with AI-driven insights.
-          </p>
-        </div>
-        <div class="project">
-          <h3>Box Office Data Prediction<a
-              href="https://drive.google.com/file/d/1nuBZFVcPHyqJ1Of-UC9ExVHHruHK4dSg/view?usp=sharing"><span
-                class="material-symbols-outlined">arrow_outward</span></a></h3>
-          <p>
-            During my IBM Externship, I undertook a project focused on
-            predicting box office data using Python libraries such as pandas,
-            matplotlib, and scikit-learn. With my intermediate level web
-            development and software development skills, I built a predictive
-            model that leveraged data science and machine learning techniques.
-            Alongside my knowledge of data structures and algorithms, I
-            utilized Python programming to analyze and process the box office
-            dataset. This project allowed me to enhance my understanding of
-            data science concepts and apply them to real-world scenarios,
-            demonstrating my proficiency in Python, data manipulation with
-            pandas, data visualization with matplotlib, and machine learning
-            with scikit-learn.
-          </p>
-        </div>
-        <div class="project">
-          <h3>Study Center Management<a href="https://github.com/cselester/studycenter"><span
-                class="material-symbols-outlined">arrow_outward</span></a></h3>
-          <p>
-            For my college project, I developed a study center management
-            website using HTML, CSS, JavaScript, PHP, and MySQL. This
-            comprehensive website aimed to streamline the management of a
-            study center by providing features such as student enrollment,
-            course management, attendance tracking, and exam scheduling.
-            Through HTML and CSS, I created an intuitive and visually
-            appealing user interface. JavaScript was used to add interactivity
-            and enhance user experience. PHP and MySQL were employed for
-            server-side scripting and database management, respectively. This
-            project showcased my proficiency in front-end and back-end web
-            development, database integration, and problem-solving skills.
-          </p>
-        </div>
-      </div>
-    </div>
+            <article class="project">
+              <div class="project-heading">
+                <h3>Leadership: Team TechnoJam</h3>
+              </div>
+              <p class="project-meta">Workshops, hackathons, outreach</p>
+              <p>As Club Coordinator, organized technical workshops, coding competitions, and hackathon activities
+                while helping increase student participation through stronger outreach.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+    </main>
   </div>
   <script src="scripts.js"></script>
 </body>

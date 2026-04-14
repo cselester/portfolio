@@ -1,87 +1,66 @@
-```markdown
-# Portfolio of CSElester
+# Portfolio of Tushar Tripathi
 
-Welcome to my personal portfolio repository!  
-This repo holds the source files for my portfolio website, showcasing my projects, skills, and work.
+This repository contains the source code for my personal portfolio website. It highlights my background in backend
+development, automation systems, and secure application design, along with featured projects, services, and contact
+information in a lightweight multi-page site built with plain HTML, CSS, and JavaScript.
 
----
+## Tech Stack
 
-## 🛠️ Tech Stack & Tools
+- HTML
+- CSS
+- JavaScript
+- Google Fonts
+- Material Symbols
+- GitHub Pages for deployment
 
-- HTML, CSS, JavaScript  
-- [Material Symbols Outlined](https://fonts.google.com/icons) (for icons)  
-- Git & GitHub  
-- Deployment: *GitHub Pages*  
+## Featured Work
 
----
+- Cryptoshare: Python-based stock data pipeline with modular scraping and trend analysis
+- Blockchain-Based Supply Chain Management: Java and MySQL project with hashing-based validation
+- FraudGuard: Rule-based fraud detection system focused on reducing false approvals
+- Automation at Pro India: CRM integrations and automated email workflows that reduced manual effort
 
-## 🚀 Projects
+## Project Structure
 
-Here are some of the featured projects in this portfolio:
-
-| Project | Description | Link |
-|---|---|---|
-| Custovista | An AI-powered tool using multi-modal agentic AI and visualizations to provide customer insights and sentiment trends. | [Hugging Face Space](https://huggingface.co/spaces/cselester/Custovista) |
-| FraudGuard| A lightweight fraud-detection system developed during HackHound 3.0 to help small businesses detect suspicious transactions in real time. | [GitHub Repo](https://github.com/cselester/fraudguard) |
-
----
-
-## 📂 Repository Structure
-
+```text
+.
+|-- index.html
+|-- intro.html
+|-- services.html
+|-- contact.html
+|-- style.css
+|-- scripts.js
+|-- README.md
+|-- cv.pdf
+`-- image assets
 ```
 
-/ (root)
-|— index.html          ← entry page (or your main HTML file)
-|— intro.html          ← project introduction / about page
-|— styles/             ← CSS files
-|— scripts/            ← JavaScript files
-|— assets/             ← images, icons, etc.
-|— README.md
+## Local Preview
 
-````
+1. Clone the repository:
 
-(Adjust as per your actual structure.)
-
----
-
-## 🧭 Usage / Deployment
-
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/cselester/portfolio.git
-````
-
-2. Move into the folder
-
-   ```bash
-   cd portfolio
-   ```
-3. Open `index.html` in your browser (for local preview)
-   Or deploy it via GitHub Pages / Netlify / Vercel etc.
-
----
-
-## ✉️ Contact & Links
-
-* GitHub: [cselester](https://github.com/cselester)
-* Email: *tushartripathi2002@gmail.com*
-* LinkedIn : *https://www.linkedin.com/in/cselester/*
-
-
----
-
-## 🚧 Future Enhancements
-
-* Add responsive support for all device screen sizes
-* Add a CMS / headless CMS backend for easier content updates
-* Add animations, dark mode toggle, or other user interactions
-* Integrate a blog section or project filter
-* Better SEO optimization
-
----
-
-Thanks for visiting my portfolio!
-I hope you find my work interesting — feel free to reach out to me for collaborations or feedback.
-
+```bash
+git clone https://github.com/cselester/portfolio.git
 ```
 
+2. Move into the project folder:
+
+```bash
+cd portfolio
+```
+
+3. Open `index.html` in your browser.
+
+## Links
+
+- GitHub: https://github.com/cselester
+- LinkedIn: https://www.linkedin.com/in/cselester/
+- Email: tushartripathi2002@gmail.com
+- Blog: https://programtechlang.blogspot.com/
+
+## Next Improvements
+
+- Add project screenshots and richer case studies
+- Add form success and error messaging in-page instead of browser alerts
+- Add a dedicated resume and achievements section
+- Add performance and SEO audits before the next deployment
